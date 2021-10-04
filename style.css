@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+    padding: 20px;
+    border-radius: 15px;
+    width: 400px;
+    height: 400px;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}

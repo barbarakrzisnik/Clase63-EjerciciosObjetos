@@ -4,9 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <title>Document</title>
 </head>
 <body id="body">
+
+    <section class="section" id="section-bienvenida">
+        <div class="container columns">
+            <div class="container column is-offset-3 box is-6 has-background-info has-text-centered">
+                <h1 id="titulo-header" class="title has-text-white is-spaced">HOLA!</h1>
+                <button id="boton-iniciar-sesion" class="button">Iniciar sesión</button>
+                <div class=" has-background-info has-text-left mt-3" id="section-formulario-inicio">
+                    <form>
+                        <div class="field">
+                            <label class="has-text-white label">Nombre</label>
+                            <div class="control">
+                              <input id="input-usuario" class="input" type="text" placeholder="Usuario">
+                            </div>
+                          </div>
+                          <div class="field">
+                            <label class="has-text-white label">Contraseña</label>
+                            <div class="control">
+                              <input id="input-contrasenia" class="input" type="password" placeholder="Contraseña">
+                            </div>
+                          </div>
+
+                          <div class="field">
+                            <div class="control">
+                              <button id="boton-enviar" class="button is-link">Enviar</button>
+                            </div>
+                          </div>
+                          <div class="field">
+                            <div class="control">
+                              <button id="cambiar-datos" class="button is-link is-hidden">Cambiar mis datos</button>
+                            </div>
+                          </div>
+                          <div class="field">
+                            <div class="control">
+                              <button id="cerrar-sesion" class="button is-link is-hidden">Cerrar sesión</button>
+                            </div>
+                          </div>
+                    </form>
+                </div>
+                <div class=" has-background-info has-text-left mt-3 is-hidden" id="section-formulario-cambiar-usuario">
+                    <form>
+                        <div class="field">
+                            <label class="has-text-white label">Nuevo usuario</label>
+                            <div class="control">
+                              <input id="input-usuario-nuevo" class="input" type="text" placeholder="Nuevo usuario">
+                            </div>
+                          </div>
+                          <div class="field">
+                            <label class="has-text-white label">Nueva contraseña</label>
+                            <div class="control">
+                              <input id="input-contrasenia-nueva" class="input" type="password" placeholder="Nueva contraseña">
+                            </div>
+                          </div>
+
+                          <div class="field">
+                            <div class="control">
+                              <button id="boton-enviar-nuevo-usuario" class="button is-link">Enviar</button>
+                            </div>
+                          </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <script src="index.js"></script>
 </body>
 </html>
